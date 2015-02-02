@@ -4,14 +4,21 @@ using System.Web.Http;
 
 namespace Wardrobe.Controllers
 {
-    public class DickController : ApiController
+    [RoutePrefix("api/Dick")]
+    public class DickApiController : ApiController
     {
+        // GET api/Dick
+        [Route("")]
+        [HttpGet]
         public IHttpActionResult Get()
         {
             var random = new Random();
             return Ok(DickGenerator(random.Next(50)));
         }
 
+        // GET api/Dick/7
+        [Route("{id:long}")]
+        [HttpGet]
         public IHttpActionResult Get(int id)
         {
             return Ok(DickGenerator(id));
