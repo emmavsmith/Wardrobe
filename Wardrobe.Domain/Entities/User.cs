@@ -19,16 +19,12 @@ namespace Wardrobe.Domain.Entities
         }
 
         public string EmailAddress { get; set; }
-
         public string Token { get; set; }
         public DateTime TokenExpiry { get; set; }
-
         public byte[] PasswordKey { get; set; }
         public byte[] PasswordSalt { get; set; }
-
         public string PasswordResetToken { get; set; }
         public DateTime? PasswordResetExpiry { get; set; }
-
         public byte[] PasscodeKey { get; set; }
         public byte[] PasscodeSalt { get; set; }
 

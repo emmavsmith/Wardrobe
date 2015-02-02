@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mappings\BaseEntityMap.cs" />
+    <Compile Include="Mappings\ItemImageMap.cs" />
+    <Compile Include="Mappings\ItemMap.cs" />
+    <Compile Include="Mappings\OutfitImageMap.cs" />
+    <Compile Include="Mappings\OutfitItemMap.cs" />
+    <Compile Include="Mappings\OutfitMap.cs" />
+    <Compile Include="Mappings\UserMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

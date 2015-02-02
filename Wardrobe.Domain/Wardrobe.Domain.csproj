@@ -44,6 +44,7 @@
     <Compile Include="Entities\ItemImage.cs" />
     <Compile Include="Entities\Outfit.cs" />
     <Compile Include="Entities\OutfitImage.cs" />
+    <Compile Include="Entities\OutfitItem.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\ItemCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
