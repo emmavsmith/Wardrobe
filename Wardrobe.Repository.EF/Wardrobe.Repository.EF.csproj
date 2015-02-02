@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseContext.cs" />
     <Compile Include="Mappings\BaseEntityMap.cs" />
     <Compile Include="Mappings\ItemImageMap.cs" />
     <Compile Include="Mappings\ItemMap.cs" />
@@ -53,6 +54,11 @@
     <Compile Include="Mappings\OutfitItemMap.cs" />
     <Compile Include="Mappings\OutfitMap.cs" />
     <Compile Include="Mappings\UserMap.cs" />
+    <Compile Include="Migrations\201502021400257_Baseline.cs" />
+    <Compile Include="Migrations\201502021400257_Baseline.Designer.cs">
+      <DependentUpon>201502021400257_Baseline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,7 +66,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <EmbeddedResource Include="Migrations\201502021400257_Baseline.resx">
+      <DependentUpon>201502021400257_Baseline.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Wardrobe.Domain\Wardrobe.Domain.csproj">
