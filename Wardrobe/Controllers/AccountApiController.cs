@@ -9,5 +9,11 @@ namespace Wardrobe.Controllers
         public AccountApiController(DatabaseContext databaseContext) : base(databaseContext)
         {
         }
+
+        [Route("Authenticate")]
+        public IHttpActionResult Authenticate()
+        {
+            return Ok();
+        }
     }
 }
