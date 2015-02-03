@@ -11,7 +11,22 @@ namespace Wardrobe.Controllers
         }
 
         [Route("Authenticate")]
+        [HttpPost]
         public IHttpActionResult Authenticate()
+        {
+            return Ok();
+        }
+
+        [Route("Logout")]
+        [HttpPost]
+        public IHttpActionResult Logout()
+        {
+            return Ok();
+        }
+
+        [Route("Register")]
+        [HttpPost]
+        public IHttpActionResult Register()
         {
             return Ok();
         }

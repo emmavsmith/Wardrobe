@@ -18,7 +18,7 @@ namespace Wardrobe.SystemTests.Tests
             Assert.That(registerResult.StatusCode, Is.EqualTo(HttpStatusCode.OK));
 
             var logoutResult = account.Logout(new LogoutModel(user.Email, user.Token));
-            Assert.That(logoutResult.StatusCode, Is.EqualTo(HttpStatusCode.OK));
+            Assert.That(logoutResult, Is.EqualTo(HttpStatusCode.OK));
 
             var loginResult = account.Login(new LoginModel(user.Email, user.Password));
             Assert.That(loginResult.StatusCode, Is.EqualTo(HttpStatusCode.OK));
@@ -70,7 +70,7 @@ namespace Wardrobe.SystemTests.Tests
     {
         public static string Get()
         {
-            return "http://http://localhost:59641/";
+            return "http://localhost:59641";
         }
     }
 }
